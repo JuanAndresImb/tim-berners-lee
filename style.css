@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: auto;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+
+}
+
+a :hover{
+    text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0.5em;
+    font-weight: bolder;
+}
+p{
+    margin-bottom: 1em;
+}
+.grid{
+    grid-template-columns: repeat(2, 1fr);
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    padding: 50px;
+}
+.navigation {
+    background-color:#03182E;
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    flex-direction: row;
+}
+.buttons_nav{
+            display: flex;
+            align-items: center;
+            flex: 1;
+}
+.buttons_nav li{
+            display: flex;
+            flex-direction:row-reverse;
+            justify-content:baseline;
+            align-items: center;
+            margin: 1px;
+}
+.buttons_nav_droite{
+    order: 3;
+    display: flex;
+    flex: 5;
+    align-items: center;
+    margin-right: 5px;
+    justify-content: flex-end;
+}
+.buttons_nav_droite li {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+}
+.logo{
+    display: flex;
+            width: 30%;
+            order: 2;
+            flex: 3;
+    
+}
+.buttons_nav a{
+    color: white;
+    text-decoration: none;
+}
+.buttons_nav_droite{
+    color: white;
+    text-decoration: none;
+}
+.button_sub{
+    font-size: 20px;
+    background-color: red;
+    border-radius: 12%;
+    padding: 9px;
+}
+.pointillets{
+    border-bottom: dotted;
+}
+aside img {
+    padding-top: 10px;
+    width: 250px;
+    height: 270px;
+}
