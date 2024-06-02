@@ -104,38 +104,35 @@ header {
 main{
   display: grid; 
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 300px repeat(5, 1fr);
+  grid-template-rows: 285px repeat(2, 1fr);
   grid-column-gap: 10px;
-  
-  
+  border: #D0D7DE solid 1px; 
+  padding-left: 20px;
+  background-color: white;
 }
+
+
+
 .contenu_principal{
 grid-column: 1/2;
 grid-row: 1/2;
 padding:50px;
 border:2px solid color(grey) ;
 margin-top: 40px;
-
-  border-left: 2px solid #dddddd;
-  font-size:   18px;
-  line-height: 1.6rem; 
-
-
 }
-.tools ul button{
 
 
-}
 .historique{
   margin-bottom: 30px;
   grid-column: 1/2;
-  grid-row: 1/2;  
-
+  grid-row: 1/2;
 }
 
 .biographie{
-  grid-column: 1/2;
-  grid-row: 2/4;
+ text-decoration: none;
+ font-size: large;
+
+  
 }
 
 .historique ul {
@@ -143,24 +140,22 @@ margin-top: 40px;
     color: #0000ee;
     display: flex;
     left: 22px;
-    font-size: 17px;
+    font-size: 13px;
     font-weight: 500;
     margin-top: 22px;
-    justify-content: space-around;
+    margin-left: 50px;
+    gap: 10px;
+    
     
 }
 
 .historique ul li {
-      list-style: none;
-  }
-
-.historique ul li {
     list-style: none;
-    color: #0000ee;
+    color: rgb(34, 34, 158);
 }
 
 
-.contenu_principal h1 p {
+.contenu_principal h1  {
     margin-bottom: 15px;
     font-size: 20px;
 }
@@ -189,24 +184,48 @@ margin-top: 40px;
     width: px;
     height: 15px;
     font-size: 16px;
+    
 }
-
+.biographie{
+  text-decoration: none;
+}
+.alternate{
+  margin-bottom: 5px;
+  font-size: 0.8em;
+  color: #979797;
+}
+.auteur{
+text-decoration: none;
+font-size: 14px;
+margin-bottom: 10px;
+}
 .presentation_lee{
   grid-column: 2/3;
   grid-row: 2/3;
-  
+  display: grid;
+  grid-template-columns:  repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
 aside {
-  
-    border: 2px solid #dddddd;
-    font-family: "Segoe UI", sans-serif;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  border: #D0D7DE solid 1px;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  align-items: center;
+  padding-bottom: 20px;
 }
       aside img {
-          width: 236px;
-          height: 178px;
-          object-fit: cover;
-          object-position: center;
-      }
+        padding-top: 10px;
+        width: 250px;
+        height: 270px;
+    }
+        
+      
 
       aside button {
           width: 199px;
